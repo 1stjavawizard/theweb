@@ -16,7 +16,7 @@
        <div class="container" style="">
             <h1>Reset Password Now!!!</h1>
             <form  method="POST" action="processing.jsp?action=reset">
-              
+                  <h1 style="color:red"><%= session.getAttribute("message") %></h1>
                 <div>
                     <input type="hidden" name="email" value='<%= session.getAttribute("email") %>'/> 
                     <input type="password" name="pword1" placeholder="Password..."/> 
